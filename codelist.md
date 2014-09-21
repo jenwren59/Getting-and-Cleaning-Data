@@ -1,18 +1,18 @@
-#H2 Code List for run_analysis.R
+Code List for run_analysis.R
 
 Unzip the project data file and determine the folder structure. Within the subdirectories there are descriptive files and several data files that will not be used.
 
 Raw data to use includes:
 - features.txt - - these are the row labels
-- activity_labels.txt - - these are descriptive labels for the "y_train" and "y_test" vectors
-- y_train.txt - - these are the activity codes for subjects in the training data set
-- y_test.txt - - these are the activity codes for subjects in the test data set
-- subject_train.txt - - these are the subject numbers for the training data set
-- subject_test.txt - - these are the subject numbers for the test data set
+- activity_labels.txt: these are descriptive labels for the "y_train" and "y_test" vectors
+- y_train.txt: these are the activity codes for subjects in the training data set
+- y_test.txt: these are the activity codes for subjects in the test data set
+- subject_train.txt: these are the subject numbers for the training data set
+- subject_test.txt: these are the subject numbers for the test data set
 
 
-- x_train.txt - - these data are the pre-processed measurements on all subjects for all activities in the training set
-- x_test.txt - -  these data are the pre-processed measurements on all subjects for all activities in the test set
+- x_train.txt: these data are the pre-processed measurements on all subjects for all activities in the training set
+- x_test.txt: these data are the pre-processed measurements on all subjects for all activities in the test set
 
 Steps used to build the analysis data include:
 
@@ -27,9 +27,9 @@ Steps used to build the analysis data include:
 9. Write the data to a text file for submission.
 
 Final variables in mytidydat.txt:
-subject: levels = 1:30
-activity: factor variable with 6 levels (see activity_labels.txt)
-Measures: factor variable with 66 levels (direct subset of features.txt see step 4 to produce a list of levels)
-AverageVal: the derived average for each measure per subject per activity
+- subject: levels = 1:30
+- activity: factor variable with 6 levels (see activity_labels.txt)
+- Measures: factor variable with 66 levels (direct subset of features.txt see step 4 to produce a list of levels)
+- AverageVal: the derived average for each measure per subject per activity
 
 
